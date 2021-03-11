@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".src.main.signUp.SignUpActivity"
+    android:orientation="vertical"
+    android:fillViewport="true">
+
+    <include
+        android:id="@+id/signup_toolbar"
+        layout="@layout/toolbar_back"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:id="@+id/signup_id_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="17dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    android:lineSpacingExtra="3sp"
+                    android:fontFamily="@font/notosanscjkkr_medium"
+                    android:includeFontPadding="false"
+                    android:text="아이디"/>
+                <EditText
+                    android:id="@+id/signup_id_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="14dp"
+                    android:background="@drawable/rec_design"
+                    android:fontFamily="@font/notosanscjkkr_regular"
+                    android:textStyle="normal"
+                    android:textSize="15sp"
+                    android:textColorHint="@color/colorTextHint"
+                    android:maxLines="1"
+                    android:inputType="text"
+                    android:hint="아이디를 입력해주세요."/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/signup_nickname_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="17dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    android:lineSpacingExtra="3sp"
+                    android:fontFamily="@font/notosanscjkkr_medium"
+                    android:includeFontPadding="false"
+                    android:text="닉네임"/>
+                <EditText
+                    android:id="@+id/signup_nickname_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="14dp"
+                    android:background="@drawable/rec_design"
+                    android:fontFamily="@font/notosanscjkkr_regular"
+                    android:textStyle="normal"
+                    android:textSize="15sp"
+                    android:textColorHint="@color/colorTextHint"
+                    android:maxLines="1"
+                    android:inputType="text"
+                    android:hint="닉네임을 입력해주세요."/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginHorizontal="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    android:lineSpacingExtra="3sp"
+                    android:fontFamily="@font/notosanscjkkr_medium"
+                    android:includeFontPadding="false"
+                    android:text="비밀번호"/>
+                <EditText
+                    android:id="@+id/signup_pw_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="14dp"
+                    android:background="@drawable/rec_design"
+                    android:fontFamily="@font/notosanscjkkr_regular"
+                    android:textStyle="normal"
+                    android:textSize="15sp"
+                    android:textColorHint="@color/colorTextHint"
+                    android:maxLines="1"
+                    android:inputType="textPassword"
+                    android:hint="비밀번호를 입력해주세요."/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/chpw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginHorizontal="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    android:lineSpacingExtra="3sp"
+                    android:fontFamily="@font/notosanscjkkr_medium"
+                    android:includeFontPadding="false"
+                    android:text="비밀번호 확인"/>
+                <EditText
+                    android:id="@+id/signup_pw_confirm_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="14dp"
+                    android:background="@drawable/rec_design"
+                    android:fontFamily="@font/notosanscjkkr_regular"
+                    android:textStyle="normal"
+                    android:textSize="15sp"
+                    android:maxLines="1"
+                    android:inputType="textPassword"
+                    android:textColorHint="@color/colorTextHint"
+                    android:hint="비밀번호를 재입력해주세요."/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginHorizontal="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    android:lineSpacingExtra="3sp"
+                    android:fontFamily="@font/notosanscjkkr_medium"
+                    android:includeFontPadding="false"
+                    android:text="전화번호"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rec_design"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/signup_phone_et"
+                        android:layout_width="0dp"
+                        android:layout_height="51dp"
+                        android:layout_weight="3"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="14dp"
+                        android:background="@color/colorTransparent"
+                        android:fontFamily="@font/notosanscjkkr_medium"
+                        android:textStyle="normal"
+                        android:textSize="15sp"
+                        android:textColorHint="@color/colorTextHint"
+                        android:maxLines="1"
+                        android:inputType="text"
+                        android:hint="전화번호를 입력해주세요."/>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/signup_phone_auth_btn"
+                        android:layout_width="0dp"
+                        android:layout_height="27dp"
+                        android:layout_weight="0.8"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/register_button_design"
+                        android:textStyle="normal"
+                        android:textSize="11sp"
+                        android:textColor="@color/colorConation"
+                        android:lineSpacingExtra="7sp"
+                        android:fontFamily="@font/notosanscjkkr_medium"
+                        android:includeFontPadding="false"
+                        android:text="인증번호"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/signup_phone_auth_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginHorizontal="20dp"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    android:lineSpacingExtra="3sp"
+                    android:fontFamily="@font/notosanscjkkr_medium"
+                    android:includeFontPadding="false"
+                    android:text="인증번호"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rec_design"
+                    android:orientation="horizontal">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="0dp"
+                        android:layout_height="51dp"
+                        android:layout_weight="3"
+                        android:layout_marginRight="10dp">
+                        <EditText
+                            android:id="@+id/signup_phone_auth_msg_et"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="14dp"
+                            android:background="@color/colorTransparent"
+                            android:fontFamily="@font/notosanscjkkr_regular"
+                            android:textStyle="normal"
+                            android:textSize="15sp"
+                            android:textColorHint="@color/colorTextHint"
+                            android:maxLines="1"
+                            android:inputType="number"
+                            android:hint="인증번호를 입력해주세요."/>
+
+                        <TextView
+                            android:id="@+id/signup_phone_auth_timer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="04:50"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:fontFamily="@font/notosanscjkkr_medium"
+                            android:textStyle="normal"
+                            android:textSize="13sp"
+                            android:textColor="@color/colorConation"
+                            android:includeFontPadding="false"
+                            android:lineSpacingExtra="5sp"
+                            />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/signup_phone_auth_msg_btn"
+                        android:layout_gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="27dp"
+                        android:layout_weight="0.8"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/register_button_design"
+                        android:textStyle="normal"
+                        android:textSize="11sp"
+                        android:textColor="@color/colorConation"
+                        android:lineSpacingExtra="7sp"
+                        android:fontFamily="@font/notosanscjkkr_medium"
+                        android:includeFontPadding="false"
+                        android:text="확인"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginHorizontal="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    android:lineSpacingExtra="3sp"
+                    android:fontFamily="@font/notosanscjkkr_medium"
+                    android:includeFontPadding="false"
+                    android:text="지역"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rec_design"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/signup_area_et"
+                        android:layout_width="0dp"
+                        android:layout_height="51dp"
+                        android:layout_weight="3"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="14dp"
+                        android:background="@color/colorTransparent"
+                        android:fontFamily="@font/notosanscjkkr_medium"
+                        android:textStyle="normal"
+                        android:textSize="15sp"
+                        android:textColorHint="@color/colorTextHint"
+                        android:maxLines="1"
+                        android:inputType="text"
+                        android:hint="거주중인 지역을 선택해주세요."/>
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/signup_area_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/ic_arrow_down"
+                        android:layout_gravity="center"
+                        android:background="@color/colorTransparent"
+                       />
+                </LinearLayout>
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/signup_confirm_btn"
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:layout_marginBottom="28dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/chpw"
+                android:background="@drawable/roundrec_design_inactive_bg"
+                android:text="완료"
+                android:textSize="17sp"
+                android:textStyle="normal"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:lineSpacingExtra="1sp"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

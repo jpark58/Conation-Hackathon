@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_main_btm_nav_home"
+        android:icon="@drawable/ic_home"
+        app:showAsAction="always"
+        android:title="홈"
+        android:enabled="true"
+        android:checkable="true"/>
+
+    <item
+        android:id="@+id/menu_main_btm_nav_chart"
+        android:icon="@drawable/ic_chart"
+        app:showAsAction="always"
+        android:title="기부 현황"
+        android:enabled="true"
+        android:checkable="true" />
+    <item
+        android:id="@+id/menu_main_btm_nav_mypage"
+        android:icon="@drawable/ic_profile"
+        app:showAsAction="always"
+        android:title="마이 페이지"
+        android:enabled="true"
+        android:checkable="true" />
+
+
+</menu>
