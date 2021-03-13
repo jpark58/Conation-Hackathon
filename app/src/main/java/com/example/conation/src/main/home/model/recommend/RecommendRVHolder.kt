@@ -14,7 +14,12 @@ class RecommendRVHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
     private val points = itemView.video_rv_points
 
     fun bindWithView(item: ResultAd){
-        Glide.with(itemView).load("dummy").placeholder(R.drawable.thumbnail).into(thumbnail)
+        if(item.advertisementName.length % 2 == 0){
+            Glide.with(itemView).load("dummy").placeholder(R.drawable.thumbnail).into(thumbnail)
+        }else{
+            Glide.with(itemView).load("dummy").placeholder(R.drawable.thumbnail2).into(thumbnail)
+        }
+
         views.text = "%,d".format(item.viewCount) + " views"
         title.text = item.advertisementName
         points.text = "%,d".format(item.price) + "p"

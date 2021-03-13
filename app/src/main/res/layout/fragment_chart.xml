@@ -211,6 +211,17 @@
                 android:layout_marginLeft="4dp"
                 android:text="Top 5"/>
 
+<!--            <androidx.recyclerview.widget.RecyclerView-->
+<!--                android:id="@+id/chart_recyclerview"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/chart_area_ranking_title"-->
+<!--                android:layout_marginTop="16dp"-->
+<!--                android:paddingLeft="20dp"-->
+<!--                android:paddingRight="20dp"/>-->
+
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/chart_ranking_1_layout"
                 android:layout_width="match_parent"
@@ -289,7 +300,7 @@
                 android:id="@+id/chart_ranking_2_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
+                android:layout_marginTop="4dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:paddingTop="16dp"
@@ -363,7 +374,7 @@
                 android:id="@+id/chart_ranking_3_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
+                android:layout_marginTop="4dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:paddingTop="16dp"
@@ -437,7 +448,7 @@
                 android:id="@+id/chart_ranking_4_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
+                android:layout_marginTop="4dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:paddingTop="16dp"
@@ -511,7 +522,7 @@
                 android:id="@+id/chart_ranking_5_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
+                android:layout_marginTop="4dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:paddingTop="16dp"

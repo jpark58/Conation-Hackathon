@@ -17,10 +17,10 @@ import com.example.conation.src.main.home.model.recommend.RecommendRVAdapter
 class CategoryFragment : BaseFragment<FragmentCategoryBinding>(FragmentCategoryBinding::bind, R.layout.fragment_category) {
     private var dataList = ArrayList<Dummy>()
     private lateinit var dataAdapter: CategoryRVAdapter
-    val temp1 = Dummy("http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4", "na", "아무광고나 이것저것", "18,423,233 views", "100p")
-    val temp2 = Dummy("http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4", "na", "아무광고나 이것저것", "18,423,233 views", "100p")
-    val temp3 = Dummy("http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4", "na", "아무광고나 이것저것", "18,423,233 views", "100p")
-    val temp4 = Dummy("http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4", "na", "아무광고나 이것저것", "18,423,233 views", "100p")
+    val temp1 = Dummy("http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4", "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/BigBuckBunny.jpg", "아무광고나 이것저것", "18,423,233 views", "1,200p")
+    val temp2 = Dummy("http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4", "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerFun.jpg", "아무광고나 이것저것", "18,423,233 views", "1,800p")
+    val temp3 = Dummy("http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4", "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/Sintel.jpg", "아무광고나 이것저것", "18,423,233 views", "9,000p")
+    val temp4 = Dummy("http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4", "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerBlazes.jpg", "아무광고나 이것저것", "18,423,233 views", "2,800p")
 
 
 

@@ -14,7 +14,7 @@ class PriceRVHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
     private val points = itemView.video_rv_points
 
     fun bindWithView(item: Dummy){
-        Glide.with(itemView).load(item.img).placeholder(R.drawable.thumbnail).into(thumbnail)
+        Glide.with(itemView).load(item.img).placeholder(R.drawable.thumbnail3).into(thumbnail)
         views.text = item.views
         title.text = item.title
         points.text = item.points

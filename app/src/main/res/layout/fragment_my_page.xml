@@ -88,7 +88,7 @@
                     android:id="@+id/mypage_point_tv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="31,568p"
+                    android:text="0p"
                     android:fontFamily="@font/notosanscjkkr_bold"
                     android:textSize="22sp"
                     android:includeFontPadding="false"
@@ -128,7 +128,7 @@
 
                 <View
                     android:id="@+id/mypage_injector_gauge"
-                    android:layout_width="100dp"
+                    android:layout_width="120dp"
                     android:layout_height="46dp"
                     android:layout_marginStart="24dp"
                     android:background="@color/colorConationYellow"

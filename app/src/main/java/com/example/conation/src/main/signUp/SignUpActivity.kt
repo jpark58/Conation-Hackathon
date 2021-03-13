@@ -111,9 +111,6 @@ class SignUpActivity: BaseActivity<ActivitySignUpBinding>(ActivitySignUpBinding:
     }
 
     override fun onAreaClicked(area: Int) {
-        checkList[6] = (binding.signupAreaEt.text).isNotEmpty()
-        validateET()
-
         Log.d("로그", "${area}")
 
         if(area == 1){
@@ -181,6 +178,8 @@ class SignUpActivity: BaseActivity<ActivitySignUpBinding>(ActivitySignUpBinding:
             regionId = 16
         }
 
+        checkList[6] = (binding.signupAreaEt.text).isNotEmpty()
+        validateET()
     }
 
     override fun onPostSignUpSuccess(response: BaseResponse) {

@@ -10,7 +10,7 @@ import androidx.fragment.app.DialogFragment
 import com.example.conation.R
 import com.example.conation.databinding.DialogDonationBinding
 
-class DonationDialog(val isSuccess: Boolean): DialogFragment() {
+class DonationDialog(val isSuccess: Boolean, val price: Int): DialogFragment() {
 
     private var binding: DialogDonationBinding? = null
     var windowManager: WindowManager? = null
@@ -56,6 +56,7 @@ class DonationDialog(val isSuccess: Boolean): DialogFragment() {
             binding!!.dialogShine1.visibility = View.VISIBLE
             binding!!.dialogShine2.setImageResource(R.drawable.dialog_img2)
             binding!!.dialogDonationPoint.visibility = View.VISIBLE
+            binding!!.dialogDonationPoint.text = "%,d".format(price) + "p"
             binding!!.dialogDonationStatus.visibility = View.VISIBLE
             binding!!.donationFailMsg1.visibility = View.GONE
             binding!!.donationFailMsg2.visibility = View.GONE

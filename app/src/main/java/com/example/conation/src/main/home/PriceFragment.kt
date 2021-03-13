@@ -18,10 +18,10 @@ class PriceFragment : BaseFragment<FragmentPriceBinding>(FragmentPriceBinding::b
 
     private var dataList = ArrayList<Dummy>()
     private lateinit var dataAdapter: PriceRVAdapter
-    val temp1 = Dummy("http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4", "na", "아무광고나 이것저것", "18,423,233 views", "100p")
-    val temp2 = Dummy("http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4", "na", "아무광고나 이것저것", "18,423,233 views", "100p")
-    val temp3 = Dummy("http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4", "na", "아무광고나 이것저것", "18,423,233 views", "100p")
-    val temp4 = Dummy("http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4", "na", "아무광고나 이것저것", "18,423,233 views", "100p")
+    val temp1 = Dummy("http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4", "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/TearsOfSteel.jpg", "아무광고나 이것저것", "18,423,233 views", "10,000p")
+    val temp2 = Dummy("http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4", "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerEscapes.jpg", "아무광고나 이것저것", "18,423,233 views", "9,000p")
+    val temp3 = Dummy("http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4", "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerBlazes.jpg", "아무광고나 이것저것", "18,423,233 views", "8,000p")
+    val temp4 = Dummy("http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4", "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerJoyrides.jpg", "아무광고나 이것저것", "18,423,233 views", "5,100p")
 
 
 

@@ -10,10 +10,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.conation.R
 import com.example.conation.config.BaseFragment
 import com.example.conation.databinding.FragmentRecommendBinding
-import com.example.conation.src.main.home.model.AdResponse
-import com.example.conation.src.main.home.model.Dummy
-import com.example.conation.src.main.home.model.Recast
-import com.example.conation.src.main.home.model.ResultAd
+import com.example.conation.src.main.home.model.*
 import com.example.conation.src.main.home.model.recommend.RecommendRVAdapter
 import com.google.android.exoplayer2.ExoPlayerFactory
 import com.google.android.exoplayer2.SimpleExoPlayer
@@ -32,16 +29,13 @@ import java.sql.Timestamp
 
 class RecommendFragment : BaseFragment<FragmentRecommendBinding>(FragmentRecommendBinding::bind, R.layout.fragment_recommend), RecommendView {
 
-    val temp1 = Dummy("http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4", "na", "아무광고나 이것저것", "18,423,233 views", "100p")
-    val temp2 = Dummy("http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4", "na", "아무광고나 이것저것", "18,423,233 views", "100p")
-    val temp3 = Dummy("http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4", "na", "아무광고나 이것저것", "18,423,233 views", "100p")
-    val temp4 = Dummy("http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4", "na", "아무광고나 이것저것", "18,423,233 views", "100p")
 
     private var dataList = ArrayList<ResultAd>()
     private lateinit var dataAdapter: RecommendRVAdapter
 
     private var startstamp = 0L
-
+    private var adId = 1
+    private var price = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -63,6 +57,8 @@ class RecommendFragment : BaseFragment<FragmentRecommendBinding>(FragmentRecomme
             startstamp = System.currentTimeMillis()
             val intent = Intent(activity, VideoActivity::class.java)
             var temp = Recast(data.advertisementId, data.advertisementName, data.price, data.url, data.viewCount)
+            adId = data.advertisementId
+            price = data.price
             intent.putExtra("data", temp)
             startActivityForResult(intent, 100)
         }
@@ -76,10 +72,12 @@ class RecommendFragment : BaseFragment<FragmentRecommendBinding>(FragmentRecomme
                 val endstamp = System.currentTimeMillis()
 
                 if(endstamp - startstamp >= 13000){
-                    val dialog = DonationDialog(true)
+                    val dialog = DonationDialog(true, price)
                     dialog.show(childFragmentManager, dialog.tag)
+                    val temp = PatchAdRequest(adId)
+                    RecommendService(this).tryPatchAdsCount(temp)
                 }else{
-                    val dialog = DonationDialog(false)
+                    val dialog = DonationDialog(false, price)
                     dialog.show(childFragmentManager, dialog.tag)
                 }
             }
@@ -101,6 +99,14 @@ class RecommendFragment : BaseFragment<FragmentRecommendBinding>(FragmentRecomme
     }
 
     override fun onGetAdFailure(message: String) {
+        showCustomToast(message)
+    }
+
+    override fun onPatchAdCountSuccess(response: AdCountResponse) {
+        showCustomToast(response.message.toString())
+    }
+
+    override fun onPatchAdCountFailure(message: String) {
         showCustomToast(message)
     }
 
