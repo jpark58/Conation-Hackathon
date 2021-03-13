@@ -8,4 +8,23 @@
     values-round/strings.xml for round devices.
     -->
     <string name="hello_world">Hello Square World!</string>
+
+    <string name="seoul">서울특별시</string>
+    <string name="gyeongi">경기도</string>
+    <string name="incheon">인천광역시</string>
+    <string name="gangwon">강원도</string>
+    <string name="jeju">제주도</string>
+    <string name="daejon">대전광역시</string>
+    <string name="cb">충청북도</string>
+    <string name="sejong">충청남도 / 세종시</string>
+    <string name="busan">부산광역시</string>
+    <string name="ulsan">울산광역시</string>
+    <string name="gn">경상남도</string>
+    <string name="daegu">대구광역시</string>
+    <string name="gb">경상북도</string>
+    <string name="gj">광주광역시</string>
+    <string name="jn">전라남도</string>
+    <string name="jb">전라북도 / 전주시</string>
+
+
 </resources>

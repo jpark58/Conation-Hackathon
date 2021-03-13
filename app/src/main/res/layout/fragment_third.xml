@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/work_img3"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="누적된 기부 포인트로"
+            android:fontFamily="@font/notosanscjkkr_bold"
+            android:textStyle="bold"
+            android:textSize="21sp"
+            android:layout_marginTop="48dp"
+            android:lineSpacingExtra="10sp"
+            android:includeFontPadding="false"
+            android:textColor="@color/colorForTitleBlack"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="경품 당첨의 행운까지!"
+            android:fontFamily="@font/notosanscjkkr_bold"
+            android:textStyle="bold"
+            android:textSize="21sp"
+            android:lineSpacingExtra="10sp"
+            android:includeFontPadding="false"
+            android:textColor="@color/colorForTitleBlack"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="누적된 기부 포인트로"
+            android:fontFamily="@font/notosanscjkkr_regular"
+            android:textStyle="normal"
+            android:textSize="14sp"
+            android:lineSpacingExtra="6sp"
+            android:includeFontPadding="false"
+            android:textColor="@color/colorForDescGray"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="경품 이벤트에 참여할 수 있습니다."
+            android:fontFamily="@font/notosanscjkkr_regular"
+            android:textStyle="normal"
+            android:textSize="14sp"
+            android:lineSpacingExtra="6sp"
+            android:includeFontPadding="false"
+            android:textColor="@color/colorForDescGray"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="24dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/workthrough_skip_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="28dp"
+            android:paddingRight="28dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:background="@drawable/roundrec_design_green_bg"
+            android:textStyle="normal"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:lineSpacingExtra="7sp"
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:includeFontPadding="false"
+            android:text="START"/>
+
+        <LinearLayout
+            android:layout_marginTop="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+            <View
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/circle_inactive_bg"/>
+            <View
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/circle_inactive_bg"/>
+            <View
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:background="@drawable/circle_active_bg"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

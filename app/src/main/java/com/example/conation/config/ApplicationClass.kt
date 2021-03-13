@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit
 
 class ApplicationClass: Application() {
     // 테스트 서버 주소
-    val API_URL = "https://dev.serverdev.shop"
+    val API_URL = "https://app.rp2-colt.shop"
 
 
     // 코틀린의 전역변수 문법
@@ -19,7 +19,7 @@ class ApplicationClass: Application() {
         lateinit var sSharedPreferences: SharedPreferences
 
         // JWT Token Header 키 값
-        val X_ACCESS_TOKEN = "X-ACCESS-TOKEN"
+        val X_ACCESS_TOKEN = "X-AUTH-TOKEN"
 
 
         // Retrofit 인스턴스, 앱 실행시 한번만 생성하여 사용합니다.

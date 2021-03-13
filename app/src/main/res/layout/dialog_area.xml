@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="@drawable/dialog_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:textStyle="normal"
+        android:fontFamily="@font/notosanscjkkr_medium"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:textSize="15sp"
+        android:gravity="center_horizontal"
+        android:text="지역선택"
+        android:textColor="@color/black"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorGreyLine"/>
+
+            <TextView
+                android:id="@+id/area_seoul"
+                android:paddingBottom="12dp"
+                android:paddingTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:textStyle="normal"
+                android:fontFamily="@font/notosanscjkkr_regular"
+                android:textSize="16sp"
+                android:clickable="true"
+                android:text="@string/seoul"
+                android:textColor="#818181"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorGreyLine"/>
+
+            <TextView
+                android:id="@+id/area_gyeonggi"
+                android:paddingBottom="12dp"
+                android:paddingTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:textStyle="normal"
+                android:fontFamily="@font/notosanscjkkr_regular"
+                android:textSize="16sp"
+                android:clickable="true"
+                android:text="@string/gyeongi"
+                android:textColor="#818181"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorGreyLine"/>
+
+            <TextView
+                android:id="@+id/area_incheon"
+                android:paddingBottom="12dp"
+                android:paddingTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:textStyle="normal"
+                android:fontFamily="@font/notosanscjkkr_regular"
+                android:textSize="16sp"
+                android:text="@string/incheon"
+                android:textColor="#818181"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorGreyLine"/>
+            <TextView
+                android:id="@+id/area_ganwon"
+                android:paddingBottom="12dp"
+                android:paddingTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:textStyle="normal"
+                android:fontFamily="@font/notosanscjkkr_regular"
+                android:textSize="16sp"
+                android:clickable="true"
+                android:text="@string/gangwon"
+                android:textColor="#818181"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorGreyLine"/>
+
+            <TextView
+                android:id="@+id/area_jeju"
+                android:paddingBottom="12dp"
+                android:paddingTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:textStyle="normal"
+                android:fontFamily="@font/notosanscjkkr_regular"
+                android:textSize="16sp"
+                android:clickable="true"
+                android:text="@string/jeju"
+                android:textColor="#818181"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorGreyLine"/>
+            <TextView
+                android:id="@+id/area_cb"
+                android:paddingBottom="12dp"
+                android:paddingTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:textStyle="normal"
+                android:fontFamily="@font/notosanscjkkr_regular"
+                android:textSize="16sp"
+                android:clickable="true"
+                android:text="@string/cb"
+                android:textColor="#818181"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorGreyLine"/>
+            <TextView
+                android:id="@+id/area_daejeon"
+                android:paddingBottom="12dp"
+                android:paddingTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:textStyle="normal"
+                android:fontFamily="@font/notosanscjkkr_regular"
+                android:textSize="16sp"
+                android:clickable="true"
+                android:text="@string/daejon"
+                android:textColor="#818181"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorGreyLine"/>
+            <TextView
+                android:id="@+id/area_sejong"
+                android:paddingBottom="12dp"
+                android:paddingTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:textStyle="normal"
+                android:fontFamily="@font/notosanscjkkr_regular"
+                android:textSize="16sp"
+                android:clickable="true"
+                android:text="@string/sejong"
+                android:textColor="#818181"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorGreyLine"/>
+            <TextView
+                android:id="@+id/area_busan"
+                android:paddingBottom="12dp"
+                android:paddingTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:textStyle="normal"
+                android:fontFamily="@font/notosanscjkkr_regular"
+                android:textSize="16sp"
+                android:clickable="true"
+                android:text="@string/busan"
+                android:textColor="#818181"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorGreyLine"/>
+            <TextView
+                android:id="@+id/area_ulsan"
+                android:paddingBottom="12dp"
+                android:paddingTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:textStyle="normal"
+                android:fontFamily="@font/notosanscjkkr_regular"
+                android:textSize="16sp"
+                android:clickable="true"
+                android:text="@string/ulsan"
+                android:textColor="#818181"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorGreyLine"/>
+            <TextView
+                android:id="@+id/area_gn"
+                android:paddingBottom="12dp"
+                android:paddingTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:textStyle="normal"
+                android:clickable="true"
+                android:fontFamily="@font/notosanscjkkr_regular"
+                android:textSize="16sp"
+                android:text="@string/gn"
+                android:textColor="#818181"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorGreyLine"/>
+            <TextView
+                android:id="@+id/area_daegu"
+                android:paddingBottom="12dp"
+                android:paddingTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:textStyle="normal"
+                android:fontFamily="@font/notosanscjkkr_regular"
+                android:textSize="16sp"
+                android:clickable="true"
+                android:text="@string/daegu"
+                android:textColor="#818181"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorGreyLine"/>
+            <TextView
+                android:id="@+id/area_gb"
+                android:paddingBottom="12dp"
+                android:paddingTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:textStyle="normal"
+                android:fontFamily="@font/notosanscjkkr_regular"
+                android:textSize="16sp"
+                android:clickable="true"
+                android:text="@string/gb"
+                android:textColor="#818181"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorGreyLine"/>
+            <TextView
+                android:id="@+id/area_gj"
+                android:paddingBottom="12dp"
+                android:paddingTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:textStyle="normal"
+                android:fontFamily="@font/notosanscjkkr_regular"
+                android:textSize="16sp"
+                android:clickable="true"
+                android:text="@string/gj"
+                android:textColor="#818181"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorGreyLine"/>
+            <TextView
+                android:id="@+id/area_jn"
+                android:paddingBottom="12dp"
+                android:paddingTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:textStyle="normal"
+                android:fontFamily="@font/notosanscjkkr_regular"
+                android:textSize="16sp"
+                android:clickable="true"
+                android:text="@string/jn"
+                android:textColor="#818181"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorGreyLine"/>
+            <TextView
+                android:id="@+id/area_jb"
+                android:paddingBottom="12dp"
+                android:paddingTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:textStyle="normal"
+                android:fontFamily="@font/notosanscjkkr_regular"
+                android:textSize="16sp"
+                android:clickable="true"
+                android:text="@string/jb"
+                android:textColor="#818181"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorGreyLine"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

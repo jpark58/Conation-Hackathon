@@ -8,7 +8,9 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="colorConation">#49B2EA</color>
+    <color name="colorConation">#55be98</color>
+    <color name="colorConationGreen">#55be98</color>
+    <color name="colorConationYellow">#ffd16c</color>
     <color name="colorTextHint">#7c7c7c</color>
     <color name="whiteForBackground">#FFFFFF</color>
     <color name="blackForText">#939292</color>
@@ -16,7 +18,19 @@
     <color name="colorTransparent">#00000000</color>
     <color name="colorGreyLine">#e0e0e0</color>
 
-    <color name="greyforBackground">#F8F6F6</color>
+    <color name="greyforBackground">#ececec</color>
     <color name="greyForStroke">#CCCBCB</color>
     <color name="gray">#e0e0e0</color>
+
+    <color name="colorForTitleBlack">#1c1c1c</color>
+    <color name="colorForDescGray">#818181</color>
+    <color name="colorForDescBlack">#545454</color>
+
+    <color name="colorForSubText">#353535</color>
+    <color name="colorForMenuTitle">#23323b</color>
+
+    <color name="colorChartBG">#f0f0f0</color>
+
+    <color name="colorThumnail">#631C1C1C</color>
+
 </resources>

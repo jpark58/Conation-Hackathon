@@ -16,44 +16,31 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.365">
 
-        <TextView
-            android:id="@+id/login_title"
+        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:fontFamily="@font/notosanscjkkr_bold"
-            android:includeFontPadding="false"
-            android:lineSpacingExtra="5sp"
-            android:text="Conation"
-            android:textColor="@color/colorConation"
-            android:textSize="32sp"
-            android:textStyle="normal" />
+            android:src="@drawable/splash_img_2"/>
+
+        <ImageView
+            android:layout_marginTop="32dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/conation_logo"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="4dp"
             android:fontFamily="@font/notosanscjkkr_medium"
             android:includeFontPadding="false"
             android:lineSpacingExtra="5sp"
-            android:text="15s 코로나 백신"
-            android:textColor="@color/colorConation"
-            android:textSize="16sp"
+            android:text="코로나를 누르는 따뜻한 기부"
+            android:textColor="@color/colorForSubText"
+            android:textSize="15sp"
             android:textStyle="normal" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="8dp"
-            android:fontFamily="@font/notosanscjkkr_medium"
-            android:includeFontPadding="false"
-            android:lineSpacingExtra="5sp"
-            android:text="광고보고 기부하자!"
-            android:textColor="@color/colorConation"
-            android:textSize="16sp"
-            android:textStyle="normal" />
+
 
         <LinearLayout
             android:id="@+id/login_insert"
@@ -82,7 +69,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:src="@drawable/email_img" />
+                        android:src="@drawable/profile_ic" />
                 </LinearLayout>
 
 
@@ -96,6 +83,8 @@
                     android:background="@color/colorTransparent"
                     android:breakStrategy="balanced"
                     android:fontFamily="@font/notosanscjkkr_regular"
+                    android:maxLines="1"
+                    android:inputType="text"
                     android:hint="아이디를 입력해주세요."
                     android:lineSpacingExtra="3sp"
                     android:textColor="@color/black"
@@ -127,7 +116,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:src="@drawable/lock_img" />
+                        android:src="@drawable/lock_ic" />
                 </LinearLayout>
 
 
@@ -142,6 +131,8 @@
                     android:background="@color/colorTransparent"
                     android:fontFamily="@font/notosanscjkkr_regular"
                     android:hint="비밀번호를 입력해주세요."
+                    android:maxLines="1"
+                    android:inputType="textPassword"
                     android:lineSpacingExtra="3sp"
                     android:textColor="@color/black"
                     android:textColorHint="@color/colorTextHint"
@@ -152,6 +143,7 @@
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/login_btn"
+
             android:layout_width="321dp"
             android:layout_height="52dp"
             android:layout_below="@+id/login_insert"

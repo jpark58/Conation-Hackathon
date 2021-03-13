@@ -83,4 +83,10 @@ dependencies {
     compile 'se.emilsjolander:StickyScrollViewItems:1.1.0'
     compile 'com.github.nitrico.stickyscrollview:stickyscrollview:1.0.2'
     compileOnly 'com.google.android.wearable:wearable:2.6.0'
+
+    def exoplayer_version = '2.13.2'
+    implementation "com.google.android.exoplayer:exoplayer-core:$exoplayer_version"
+    implementation "com.google.android.exoplayer:exoplayer-ui:$exoplayer_version"
+    implementation "com.google.android.exoplayer:exoplayer-hls:$exoplayer_version"
+
 }

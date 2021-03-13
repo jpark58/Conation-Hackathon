@@ -3,6 +3,7 @@ package com.example.conation.src.main
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import com.example.conation.R
 import com.example.conation.config.ApplicationClass
 import com.example.conation.config.BaseActivity
@@ -20,6 +21,10 @@ class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::infl
         super.onCreate(savedInstanceState)
 
         supportFragmentManager.beginTransaction().replace(R.id.main_frm, HomeFragment()).commitAllowingStateLoss()
+
+        binding.mainBtmNav.selectedItemId = R.id.menu_main_btm_nav_home
+
+        binding.mainBtmNav.itemIconTintList = null
 
         binding.mainBtmNav.setOnNavigationItemSelectedListener(
             BottomNavigationView.OnNavigationItemSelectedListener { item ->
@@ -41,6 +46,8 @@ class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::infl
                     R.id.menu_main_btm_nav_mypage -> {
                         val jwt = ApplicationClass.sSharedPreferences.getString(ApplicationClass.X_ACCESS_TOKEN, "na")
 
+                        Log.d("로그", "${jwt}")
+
                         if(jwt == "na"){
                             val intent = Intent(this, LoginActivity::class.java)
                             startActivity(intent)
@@ -51,6 +58,12 @@ class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::infl
                             return@OnNavigationItemSelectedListener true
                         }
 
+                    }
+                    else -> {
+                        supportFragmentManager.beginTransaction()
+                            .replace(R.id.main_frm, HomeFragment())
+                            .commitAllowingStateLoss()
+                        return@OnNavigationItemSelectedListener true
                     }
                 }
                 false

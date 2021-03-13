@@ -8,16 +8,14 @@
     android:orientation="vertical"
     tools:context=".src.main.home.HomeFragment">
 
-    <TextView
-        android:layout_width="match_parent"
+    <ImageView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Conation"
-        android:fontFamily="@font/notosanscjkkr_bold"
-        android:textSize="20sp"
-        android:includeFontPadding="false"
-        android:paddingTop="12sp"
-        android:paddingBottom="12sp"
-        android:paddingLeft="20sp"/>
+        android:layout_gravity="left"
+        android:src="@drawable/conation_logo_toolbar"
+        android:paddingTop="8sp"
+        android:paddingLeft="20dp"
+        android:paddingBottom="8sp"/>
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/home_tab_layout"
         app:tabMode="fixed"

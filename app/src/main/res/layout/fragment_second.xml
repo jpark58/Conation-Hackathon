@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/work_img2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="한눈에 확인하는"
+            android:fontFamily="@font/notosanscjkkr_bold"
+            android:textStyle="bold"
+            android:textSize="21sp"
+            android:layout_marginTop="48dp"
+            android:lineSpacingExtra="10sp"
+            android:includeFontPadding="false"
+            android:textColor="@color/colorForTitleBlack"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="투명한 기부 내역"
+            android:fontFamily="@font/notosanscjkkr_bold"
+            android:textStyle="bold"
+            android:textSize="21sp"
+            android:lineSpacingExtra="10sp"
+            android:includeFontPadding="false"
+            android:textColor="@color/colorForTitleBlack"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="모인 기부금은 투명하게 공개되며,"
+            android:fontFamily="@font/notosanscjkkr_regular"
+            android:textStyle="normal"
+            android:textSize="14sp"
+            android:lineSpacingExtra="6sp"
+            android:includeFontPadding="false"
+            android:textColor="@color/colorForDescGray"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="기부금 전달 내역을 알려드립니다."
+            android:fontFamily="@font/notosanscjkkr_regular"
+            android:textStyle="normal"
+            android:textSize="14sp"
+            android:lineSpacingExtra="6sp"
+            android:includeFontPadding="false"
+            android:textColor="@color/colorForDescGray"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="24dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/workthrough_skip_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:background="@drawable/roundrec_design_transparent_bg"
+            android:textStyle="normal"
+            android:textSize="15sp"
+            android:textColor="@color/colorConation"
+            android:lineSpacingExtra="7sp"
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:includeFontPadding="false"
+            android:text="SKIP"/>
+
+        <LinearLayout
+            android:layout_marginTop="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+            <View
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/circle_inactive_bg"/>
+            <View
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/circle_active_bg"/>
+            <View
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:background="@drawable/circle_inactive_bg"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

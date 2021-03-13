@@ -2,13 +2,17 @@ package com.example.conation.src.main.login
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import com.example.conation.R
+import com.example.conation.config.ApplicationClass
 import com.example.conation.config.BaseActivity
 import com.example.conation.databinding.ActivityLoginBinding
+import com.example.conation.src.main.login.model.LoginResponse
+import com.example.conation.src.main.login.model.PostLoginRequest
 import com.example.conation.src.main.signUp.SignUpActivity
 import com.example.conation.utils.onMyTextChanged
 
-class LoginActivity : BaseActivity<ActivityLoginBinding>(ActivityLoginBinding::inflate) {
+class LoginActivity : BaseActivity<ActivityLoginBinding>(ActivityLoginBinding::inflate), LoginActivityView {
     private var isId = false
     private var isPW = false
 
@@ -43,5 +47,33 @@ class LoginActivity : BaseActivity<ActivityLoginBinding>(ActivityLoginBinding::i
             }
         }
 
+        binding.loginBtn.setOnClickListener {
+            if(isPW && isId){
+                val request = PostLoginRequest(binding.loginPw.text.toString(), binding.loginId.text.toString())
+                LoginService(this).tryPostLogin(request)
+            }
+        }
+
+    }
+
+    override fun onPostLoginSuccess(response: LoginResponse) {
+        when(response.code){
+            1000 -> {
+                showCustomToast(response.message.toString())
+                Log.d("로그", "In success")
+                val jwt = response.result
+                val editor = ApplicationClass.sSharedPreferences.edit()
+                editor.putString(ApplicationClass.X_ACCESS_TOKEN, jwt)
+                editor.apply()
+                finish()
+            }
+            else -> {
+                showCustomToast(response.message.toString())
+            }
+        }
+    }
+
+    override fun onPostLoginFailure(message: String) {
+        showCustomToast(message)
     }
 }
