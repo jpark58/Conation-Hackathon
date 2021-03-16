@@ -70,6 +70,8 @@
 <br>
 
 ## Presentation
+![Watch the video](https://github.com/jpark58/Conation-Hackathon/issues/1#issue-832377711)
+
 ![ppt](https://github.com/cmg1411/Conation/blob/main/img/pptimg/1.png)
 ![ppt](https://github.com/cmg1411/Conation/blob/main/img/pptimg/2.png)
 ![ppt](https://github.com/cmg1411/Conation/blob/main/img/pptimg/3.png)
