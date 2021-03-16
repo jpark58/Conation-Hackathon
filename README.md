@@ -25,7 +25,7 @@
 <br>
  
 ## APP
-![이미지](img/앱.png)
+![이미지](https://github.com/cmg1411/Conation/blob/main/img/%EC%95%B1.png)
 
 <br>
 <br>
