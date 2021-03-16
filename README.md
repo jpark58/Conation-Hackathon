@@ -42,7 +42,7 @@
 
 ## Stack
 
-![img](img/stack.png)
+![img](https://github.com/cmg1411/Conation/blob/main/img/stack.png)
 
 - java jdk 11
 - gradle
@@ -54,13 +54,13 @@
 
 ## ERD
 
-![이알](img/erd.png)
+![이알](https://github.com/cmg1411/Conation/blob/main/img/erd.png)
 
 <br>
 <br>
 
 ## 당첨 !!
-![이미지](img/당첨.png)
+![이미지](https://github.com/cmg1411/Conation/blob/main/img/%EB%8B%B9%EC%B2%A8.png)
 
 <br>
 <br>
@@ -70,12 +70,12 @@
 <br>
 
 ## Presentation
-![ppt](/img/pptimg/1.png)
-![ppt](/img/pptimg/2.png)
-![ppt](/img/pptimg/3.png)
-![ppt](/img/pptimg/4.png)
-![ppt](/img/pptimg/5.png)
-![ppt](/img/pptimg/6.png)
-![ppt](/img/pptimg/7.png)
-![ppt](/img/pptimg/8.png)
+![ppt](https://github.com/cmg1411/Conation/blob/main/img/pptimg/1.png)
+![ppt](https://github.com/cmg1411/Conation/blob/main/img/pptimg/2.png)
+![ppt](https://github.com/cmg1411/Conation/blob/main/img/pptimg/3.png)
+![ppt](https://github.com/cmg1411/Conation/blob/main/img/pptimg/4.png)
+![ppt](https://github.com/cmg1411/Conation/blob/main/img/pptimg/5.png)
+![ppt](https://github.com/cmg1411/Conation/blob/main/img/pptimg/6.png)
+![ppt](https://github.com/cmg1411/Conation/blob/main/img/pptimg/7.png)
+![ppt](https://github.com/cmg1411/Conation/blob/main/img/pptimg/8.png)
 
